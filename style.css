@@ -1,42 +1,168 @@
-/* <!-- background-color 속성 --> */
-    /* div{
-        width:100px;
-        height:100px;
-        background-color: red;
-    } */
+* {
+    margin: 0; 
+}
+section {
+    width: 100%;
+    height: 100vh;
+}
+section:first-child{
+    width: 100%; 
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1665686307516-1915b9616526?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.top-container {
+    z-index: 9;
+    width: 1200px; 
+    height: 500px; 
+    color: white;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+.top-container h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.top-container h2 {
+    font-size: 20px;
+}
+.top-container h2:first-of-type {
+    margin-bottom: 12px;
+}
+section:first-child::after{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+section:nth-child(2){
+    background-image: url('https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.feature-container {
+    z-index: 99;
+    width: 1200px; 
+    height: 480px;
+    display: flex;     
+}
+.feature-left {
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.feature-left p {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.feature-left p span {
+    font-size: 2em;
+    color: #013088;
+}
+.feature-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+    transform: translateY(-40px);
+}
+.feature-right p {
+    margin-bottom: 20px;
+}
 
-    /* background-img 속성 */
-    div{
-        border:5px solid red;
-        width:500px;
-        height:500px;
-        background-image: url(https://images.unsplash.com/photo-1565884280295-98eb83e41c65?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-       background-size:cover ;
-background-repeat: no-repeat;
-background-position: center ;
-    }
+section:nth-child(3){
+    /* background-color: green; */
+}
 
-    body{
-        height:1000px;
+.main-status{
+    width:100%;
+    height:100vh;
+    background-image: url(https://images.unsplash.com/photo-1550895030-823330fc2551?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+position:relative;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.main-status::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color: rgba(255, 255, 255, 0.3);
 
-    }
-    .parent{
-        width: 320px;
-        height: 240px;
-        border:1px solid black;
-        overflow:scroll;
 
+}
+.status-container{
+    width:1000px;
+    height:500px;
     }
-    .children{
-        height: 2000px;
-        background-image: url(./images/coffee.jpg);
-        background-attachment: fixed;
+    .status-container h2{
+        font-size:45px;
+        font-weight: bold;
+        color:#656565;
     }
-    .plus{
-        background-color: red;
-        background-image: url(./images/coffee.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%;
-        background-attachment: fixed;
+    .status-contents{
+        width:100%;
+        height: 400px;
+        display:flex;
+    
     }
+.contents-left,
+.contents-right{
+    width:50%;
+    height:100%;
+    overflow:hidden;
+}
+.contents-left{
+    display: flex;
+    flex-direction: column;
+
+}
+.contents-left .item{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.contents-left h3{
+    font-size:20px;
+    margin-bottom: 12px;
+    color:rgba(0,0,0,0.7);
+}
+.contents-right{
+    border-radius: 20px;
+}
+.contents-right>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
