@@ -1,0 +1,42 @@
+/* <!-- background-color 속성 --> */
+    /* div{
+        width:100px;
+        height:100px;
+        background-color: red;
+    } */
+
+    /* background-img 속성 */
+    div{
+        border:5px solid red;
+        width:500px;
+        height:500px;
+        background-image: url(https://images.unsplash.com/photo-1565884280295-98eb83e41c65?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+       background-size:cover ;
+background-repeat: no-repeat;
+background-position: center ;
+    }
+
+    body{
+        height:1000px;
+
+    }
+    .parent{
+        width: 320px;
+        height: 240px;
+        border:1px solid black;
+        overflow:scroll;
+
+    }
+    .children{
+        height: 2000px;
+        background-image: url(./images/coffee.jpg);
+        background-attachment: fixed;
+    }
+    .plus{
+        background-color: red;
+        background-image: url(./images/coffee.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
